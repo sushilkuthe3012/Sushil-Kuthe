@@ -267,6 +267,30 @@ section{padding:80px 0}
 .rec-card p{margin-top:10px;font-size:14px;color:#2a3850}
 @media (max-width:760px){.rec-grid{grid-template-columns:1fr}}
 
+/* ---------- Recommendations / Quotes ---------- */
+.rec-quotes{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:36px}
+.quote-card{
+  background:var(--white);border:1px solid var(--border);border-radius:var(--radius);
+  padding:32px 28px;position:relative;box-shadow:0 2px 12px rgba(26,46,74,.06);
+}
+.quote-mark{
+  font-size:72px;line-height:1;color:var(--gold);font-family:Georgia,serif;
+  position:absolute;top:12px;left:24px;opacity:.35;
+}
+blockquote{
+  font-size:15px;line-height:1.75;color:#2a3850;margin-top:32px;
+  font-style:italic;
+}
+.quote-author{margin-top:24px;padding-top:18px;border-top:1px solid var(--border)}
+.quote-name{font-weight:700;font-size:15px;color:var(--navy)}
+.quote-title{font-size:13px;color:var(--grey-text);margin-top:3px}
+.quote-li{
+  display:inline-block;margin-top:10px;font-size:13px;font-weight:600;
+  color:var(--gold-dark);text-decoration:none;
+}
+.quote-li:hover,.quote-li:focus-visible{text-decoration:underline}
+@media (max-width:760px){.rec-quotes{grid-template-columns:1fr}}
+
 /* ---------- Contact / footer ---------- */
 .contact{background:var(--navy);color:var(--white);padding:80px 0 0}
 .contact .section-heading{color:var(--white)}
@@ -570,6 +594,41 @@ section{padding:80px 0}
         <p class="date">2024–2025</p>
         <p>Acknowledged by global enterprise accounts for service delivery, technical precision, and SLA compliance.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RECOMMENDATIONS ============ -->
+<section id="recommendations">
+  <div class="container reveal">
+    <h2 class="section-heading">What People Say</h2>
+    <p class="section-lead" style="margin-top:16px;font-size:15px;">Verified LinkedIn recommendations from managers who worked with me directly.</p>
+    <div class="rec-quotes">
+
+      <div class="quote-card">
+        <div class="quote-mark">"</div>
+        <blockquote>
+          Sushil is highly motivated and observant individual, who oozes passion and a desire to learn and deliver. He has an eye for detail and seeing the bigger picture comes easy to him. He received great feedback from our internal stakeholders and we enjoyed supporting him during a recent work shadowing experience!
+        </blockquote>
+        <div class="quote-author">
+          <div class="quote-name">Brett Sharkey</div>
+          <div class="quote-title">Talent &amp; OD Leader, managed Sushil directly</div>
+          <a class="quote-li" href="https://linkedin.com/in/sushil-kuthe-940a84203" target="_blank" rel="noopener">View on LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="quote-card">
+        <div class="quote-mark">"</div>
+        <blockquote>
+          I had the privilege of managing Sushil Kuthe, and he was brilliant from day one. From his interview through to his last day with us, Sushil consistently set the bar high. He's incredibly proactive, always the first to identify problems and come up with practical solutions. His customer service mindset is unmatched. He never hesitated to take on new projects or added responsibilities, no matter how challenging. Sushil was a star performer who directly helped us meet and exceed customer expectations while adding real business value. Any team would be lucky to have him.
+        </blockquote>
+        <div class="quote-author">
+          <div class="quote-name">Manu Koundal</div>
+          <div class="quote-title">Major Incident Manager at Zscaler, managed Sushil directly</div>
+          <a class="quote-li" href="https://linkedin.com/in/sushil-kuthe-940a84203" target="_blank" rel="noopener">View on LinkedIn</a>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
