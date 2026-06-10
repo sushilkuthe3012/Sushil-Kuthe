@@ -230,6 +230,31 @@ section{padding:80px 0}
   padding:8px 16px;font-size:14px;font-weight:500;color:var(--navy);
 }
 
+/* ---------- Academic Projects ---------- */
+.proj-card{
+  background:var(--white);border-radius:var(--radius);margin-top:36px;
+  border-top:5px solid var(--gold);box-shadow:0 4px 18px rgba(26,46,74,.07);
+  padding:36px;
+}
+.proj-header{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:flex-start}
+.proj-title{font-size:clamp(18px,2.2vw,24px);font-weight:800}
+.proj-meta{margin-top:4px;font-size:14px;color:var(--grey-text)}
+.proj-badge{
+  background:var(--navy);color:var(--gold);font-weight:700;font-size:13px;
+  padding:8px 14px;border-radius:var(--radius);white-space:nowrap;flex-shrink:0;
+}
+.proj-role{
+  margin-top:14px;font-size:15px;font-weight:600;color:var(--gold-dark);
+  letter-spacing:.01em;
+}
+.proj-cols{display:grid;grid-template-columns:1fr 1fr;gap:36px;margin-top:24px}
+.proj-col h4{
+  font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--navy);margin-bottom:12px;
+}
+.proj-col p + p{margin-top:14px}
+@media (max-width:760px){.proj-cols{grid-template-columns:1fr;gap:24px}.proj-card{padding:26px 22px}.proj-badge{font-size:12px}}
+
 /* ---------- Recognition ---------- */
 .recognition{background:var(--grey-bg)}
 .rec-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:36px}
@@ -274,6 +299,7 @@ section{padding:80px 0}
       <li><a href="#about">About</a></li>
       <li><a href="#work">Work</a></li>
       <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a class="nav-cv" href="https://drive.google.com/file/d/10U_HK1j85kWh6qM_Qkh1PyvAiqHt8mdL/view?usp=sharing" target="_blank" rel="noopener">Download CV</a></li>
@@ -448,6 +474,41 @@ section{padding:80px 0}
         <p class="meta">2019 – 2023 · Mumbai, India</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ============ ACADEMIC PROJECTS ============ -->
+<section id="projects">
+  <div class="container reveal">
+    <h2 class="section-heading">Academic Projects</h2>
+    <article class="proj-card">
+      <div class="proj-header">
+        <div>
+          <h3 class="proj-title">PhoneVentures Business Simulation</h3>
+          <p class="proj-meta">NBS8329 · MSc International Business · Newcastle University Business School · June 2026</p>
+        </div>
+        <div class="proj-badge">2nd in Cohort · 5th of 21 Teams</div>
+      </div>
+      <div class="proj-role">Strategy Lead, Team Nexora</div>
+      <div class="case-tags" style="margin-top:16px">
+        <span class="tag">Cost Leadership</span>
+        <span class="tag">Cross-cultural Teamwork</span>
+        <span class="tag">Strategic Decision-making</span>
+        <span class="tag">Global Market Entry</span>
+        <span class="tag">Porter · BSC · VRIO</span>
+      </div>
+      <div class="proj-cols">
+        <div class="proj-col">
+          <h4>Context</h4>
+          <p>Led strategic direction for a simulated smartphone company across 8 competitive rounds, competing against 21 international teams. Managed a cross-cultural team through high-pressure, time-constrained decisions spanning pricing, supply chain, HR, marketing, and financial planning.</p>
+        </div>
+        <div class="proj-col">
+          <h4>Strategic Approach + Result</h4>
+          <p>Designed and executed a cost leadership strategy targeting price-sensitive segments across China, Nigeria, and South Africa. Applied Porter's Cost Leadership, Balanced Scorecard (Kaplan &amp; Norton), and RBV/VRIO frameworks in live decision-making contexts.</p>
+          <p class="case-outcome"><strong>Result:</strong> Ranked 2nd in the cohort and 5th overall out of 21 global teams.</p>
+        </div>
+      </div>
+    </article>
   </div>
 </section>
 
